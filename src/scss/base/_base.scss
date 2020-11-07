@@ -1,0 +1,93 @@
+body {
+  font-family: $font-family--primary;
+  font-size: $base-font;
+  font-weight: $font-weight--medium;
+  color: $accent;
+  line-height: ($base-line / $base-font );
+}
+
+h1,h2,h3,h4,h5,h6 {
+  margin-top: 0px;
+}
+
+h1 {
+	font-size: em(25px);
+  margin-bottom: em(35px, 25px);
+  text-align: center;
+  @include mq(md) {
+    font-size: 42px;
+    margin-bottom: em(35px, 42px);
+  }
+  @include mq(lg) {
+    font-size: 62px;
+    margin-bottom: em(35px, 62px);
+  }
+}
+
+h2 {
+	font-size: em(25px);
+  margin-bottom: em(35px, 25px);
+  @include mq(md) {
+    font-size: 32px;
+    margin-bottom: em(35px, 32px);
+  }
+  @include mq(lg) {
+    font-size: 42px;
+    margin-bottom: em(35px, 42px);
+  }
+}
+
+p {
+  font-size: 20px;
+  margin: 0;
+}
+
+// =============================================================================
+//      MARGIN
+// =============================================================================
+
+.mt-100 {
+  margin-top: 100px;
+}
+.mt-80 {
+  margin-top: 80px;
+}
+.mt-50 {
+  margin-top: 50px;
+}
+.mt-30 {
+  margin-top: 30px;
+}
+.mt-20 {
+  margin-top: 20px;
+}
+.mt-10 {
+  margin-top: 10px;
+}
+.mb-30 {
+  margin-bottom: 30px;
+}
+.mb-20 {
+  margin-bottom: 20px;
+}
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

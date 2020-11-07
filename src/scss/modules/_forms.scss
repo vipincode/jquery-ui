@@ -1,0 +1,361 @@
+// =============================================================================
+//             SPINNER CONTROLL
+// =============================================================================
+
+.spiners {
+  padding: 40px;
+  border: 1px solid $grey;
+  @include mq(md) {
+    @include flexy($wrap: wrap);
+    .ctrl_item {
+      margin: $gutter;
+      @include mq(md) {
+        flex: 1 per-line(2);
+      }
+    }
+  }
+}
+
+.ui-spinner a.ui-spinner-button {
+    background-color: $grey;
+}
+
+.ui-spinner {
+  border: 1px solid $grey;
+}
+
+.ui-spinner-input {
+  border: none !important;
+  margin: 0 !important;
+  padding: 9px 0px 9px 13px !important;
+}
+
+.ui-spinner-button {
+  width: em(48px);
+}
+
+.ctrl_item .ui-button .ui-icon {
+    background-image: url('../img/ui-icons_777777_256x240.png');
+}
+
+.ctrl_item .ui-icon, .ui-widget-content .ui-icon {
+    background-image: url('../img/ui-icons_444444_256x240.png');
+}
+
+.ctrl_item .ui-icon-triangle-1-n,
+.ctrl_item .ui-button-icon.ui-icon.custom-up-icon {
+    background-position: 0 -16px;
+}
+
+.ctrl_item .ui-icon-triangle-1-s,
+.ctrl_item .ui-button-icon.ui-icon.custom-down-icon {
+    background-position: -65px -16px;
+}
+
+.ctrl_item .ui-icon {
+    width: 16px;
+    height: 16px;
+}
+
+
+// =============================================================================
+//             SLIDER CONTROLL
+// =============================================================================
+
+.slider {
+  padding: 40px;
+  border: 1px solid $grey;
+  @include mq(md) {
+    @include flexy($wrap: wrap);
+    .slider_item {
+      margin: $gutter;
+      @include mq(md) {
+        flex: 1 per-line(3);
+      }
+    }
+  }
+}
+
+.ui-slider-horizontal {
+  background: $sun_flower;
+}
+
+.ui-slider-horizontal .ui-slider-handle {
+  background: darken($grey, 12%);
+  outline: none;
+}
+
+.heavytext {
+  font-weight: $font-weight--large;
+  color: $carrot;
+}
+
+.ui-slider-horizontal {
+    height: 8px;
+}
+
+.ui-slider-horizontal .ui-slider-range {
+  background-color: $carrot;
+}
+
+.ui-slider-horizontal .ui-slider-handle {
+  top: em(-10px);
+}
+
+.ui-slider .ui-slider-handle {
+  height: em(26px);
+  width: em(10px);
+  background: $carrot;
+}
+
+
+// =============================================================================
+//             MENU CONTROL
+// =============================================================================
+
+.fixedHeight {
+  height: em(150px);
+}
+
+.ui-selectmenu-button.ui-button {
+  border: 1px solid $grey;
+  border-radius: $br-radius;
+  outline: none;
+}
+
+.ui-selectmenu-menu .ui-menu {
+  background: $white;
+  border: 1px solid $grey;
+  border-top: none;
+}
+
+.ui-accordion .ui-accordion-header {
+  outline: none;
+  border-bottom: 1px solid $grey;
+  margin: 0;
+  padding: 15px 10px;
+}
+
+#accordian .ui-button .ui-icon {
+    background-image: url('../img/ui-icons_777777_256x240.png');
+}
+
+#accordian .ui-icon, .ui-widget-content .ui-icon {
+    background-image: url('../img/ui-icons_444444_256x240.png');
+}
+
+#accordian .ui-icon-triangle-1-n {
+    background-position: 0 -16px;
+}
+
+#accordian .ui-icon-triangle-1-s {
+    background-position: -65px 0px;
+}
+
+#accordian .ui-icon {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    right: 0;
+    top: 20px;
+}
+
+// =============================================================================
+//             ACCORDIAN CONTROL
+// =============================================================================
+
+.ui-helper-reset {
+  margin-top: 30px;
+}
+
+.menu_ctrl .ui-button .ui-icon {
+    background-image: url('../img/ui-icons_777777_256x240.png');
+}
+
+.menu_ctrl .ui-icon, .ui-widget-content .ui-icon {
+    background-image: url('../img/ui-icons_444444_256x240.png');
+}
+
+.menu_ctrl .ui-icon-triangle-1-n {
+    background-position: 0 -16px;
+}
+
+.menu_ctrl .ui-icon-triangle-1-s {
+    background-position: -61px 2px;
+}
+
+.menu_ctrl .ui-icon {
+    width: 16px;
+    height: 16px;
+}
+
+// =============================================================================
+//             PROGRESSBAR CONTROL
+// =============================================================================
+
+#progbar {
+  padding: 40px;
+  border: 1px solid $grey;
+  @include mq(md) {
+    @include flexy($wrap: wrap);
+    .progressbar_item {
+      margin: $gutter;
+      @include mq(md) {
+        flex: 1 per-line(3);
+      }
+    }
+  }
+}
+
+.ui-progressbar {
+  background-color: $light_green;
+}
+
+.ui-progressbar .ui-progressbar-value {
+  background-color: $dark_green;
+}
+
+.prog2Label {
+   position: absolute;
+   left: 45%;
+   // top:5px;
+}
+
+// =============================================================================
+//             DATEPICKER CONTROL
+// =============================================================================
+
+.datepicker {
+  @include mq(md) {
+    @include flexy($wrap: wrap);
+    .datepicker_item {
+      margin: $gutter;
+      @include mq(md) {
+        flex: 1 per-line(2);
+      }
+    }
+  }
+}
+
+.ui-datepicker {
+  background-color: $white;
+  color: $black;box-shadow: 0 0 10px rgba(0, 0, 0, 0.14);
+}
+
+.ui-datepicker .ui-datepicker-prev::after,
+.ui-datepicker .ui-datepicker-next::after {
+  cursor: pointer;
+  font-family: FontAwesome;
+  position: absolute;
+  top:0;
+  font-size: em(20px);
+  font-weight: $font-weight--large;
+}
+
+.ui-datepicker .ui-datepicker-prev::after {
+  content: "\f104";
+  left: 2px;
+}
+
+.ui-datepicker .ui-datepicker-next::after {
+  content: "\f105";
+  right: 2px;
+}
+
+.ui-datepicker .ui-datepicker-prev-hover {
+  left: 2px;
+}
+
+.ui-datepicker .ui-datepicker-next-hover {
+    right: 2px;
+}
+
+.ui-datepicker .ui-datepicker-prev-hover,
+.ui-datepicker .ui-datepicker-next-hover {
+    top: 2px;
+}
+
+.ui-datepicker td span, .ui-datepicker td a {
+  color: $traquis_dark;
+}
+
+.ui-datepicker .ui-datepicker-buttonpane button,
+.ui-datepicker .ui-datepicker-title select {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: transparent;
+  border: 1px solid $traquis_dark;
+  color: $traquis_dark;
+  font-size: em(17px);
+  font-weight: $font-weight--medium;
+  border-radius: $br-radius;
+}
+
+.ui-datepicker .ui-datepicker-title select {
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+// Disabled Datepicker
+ .ui-datepicker-unselectable.ui-state-disabled .ui-state-default {
+  color: $carrot;
+}
+
+#datepickers .datepicker_item input {
+  width: 250px;
+  background-image: url('../img/calender.png');
+  background-repeat: no-repeat;
+  background-position: 247px 6px;
+  background-size: 25px 25px;
+  opacity: 0.55;
+}
+
+
+// =============================================================================
+//             INPUT FIELDS
+// =============================================================================
+
+input[type="text"] {
+  width: 100%;
+  // background-color: $traquis_light;
+  border: none;
+  outline: none;
+  font-size: em(15px);
+  font-weight: $font-weight--medium;
+  color: $accent;
+  margin-bottom: em(15px, 15px);
+  padding: 10px 15px;
+  border: 1px solid $grey;
+  border-radius: $br-radius;
+}
+
+label {
+  display: block;
+  margin-bottom: em(20px);
+}
+
+// =============================================================================
+//             FOOTER
+// =============================================================================
+
+footer {
+  text-align: center;
+  p {
+    font-size: em(14px);
+    letter-spacing: $letter-space;
+    margin-bottom: em(10px, 14px);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+

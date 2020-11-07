@@ -1,0 +1,13 @@
+.btn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 8px 20px;
+  border-radius: $br-radius;
+  color: $white;
+  text-transform: uppercase;
+  font-size: em(15px);
+  font-weight: $font-weight--large;
+  margin-top: em(30px, 15px);
+  @include bg-colors($ui-colors);
+}
